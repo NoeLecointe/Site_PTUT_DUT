@@ -1,0 +1,153 @@
+@media (max-width: 425px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav div#menu {
+        left: -120vw;
+    }
+    nav .iconify {
+        font-size: 20px;
+    }
+    nav div#menu li a {
+        font-size: 20px;
+    }
+    nav {
+        padding: 20px 60px 20px 30px;
+    }
+    nav .logo {
+        margin-left: 25px;
+    }
+    nav.sticky {
+        padding: 5px 35px;
+    }
+    nav.sticky .logo {
+        margin-left: 5px;
+    }
+    header #logo-header {
+        width: 60%;
+    }
+    #scroll {
+        display: none;
+    }
+    .parallelogramme {
+        width: 50%;
+    }
+    .parallelogramme h2 {
+        font-size: 1em;
+    }
+    #agence .contenue img {
+        display: none;
+    }
+    #agence .contenue div p {
+        font-size: 1em;
+    }
+    .contenue {
+        display: flex;
+        flex-direction: column;
+    }
+    #projet .contenue .projet {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    #projet .contenue .projet a {
+        width: 90%;   
+    }
+
+    #projet .contenue .d-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 2vh;
+        text-align: center;
+    }
+    #projet .contenue .d-pc {
+        display: none;
+    }
+    .mySlides>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mySlides>div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .text>p {
+        display: none;
+    }
+
+
+    #partenaires .contenue>div>div img {
+        width: 35vw;
+        height: auto;
+        margin: 3vh;
+    }
+
+    #partenaires .contenue>div>div.pop img {
+        height: 80%;
+    }
+
+
+
+    #messageRS {
+        display: none;
+    }
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2vh;
+        font-size: 1em;
+    }
+    .d-pc {
+        display: none;
+    }
+    footer #reseau {
+        padding: 2vh 0vw;
+    }
+    footer .contact>div h4 {
+        width: max-content;
+    }
+    footer .contact>div {
+        width: 80%;
+    }
+    footer .contact>div form .inputsubmit {
+        width: 50%;
+    }
+
+    footer .contact>div form .inputsubmit:hover {
+        width: 50%;
+    }
+    footer .contact div.footer_left h4 {
+        margin-top: 3vh;
+        width: auto;
+    }
+    .pdp {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2vh;
+    }
+    .pdp a>img {
+        margin-inline: 1vw;
+        margin-top: 2.5vh;
+        width: auto;
+        height: 5vh;
+    }
+    .d-mobile {
+        display: block;
+    }
+
+    #scrollUp a {
+        font-size: 40px;
+    }
+}

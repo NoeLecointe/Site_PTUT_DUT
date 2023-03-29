@@ -1,0 +1,161 @@
+nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  min-height: 13vh;
+  padding: 40px 100px;
+}
+
+nav.sticky {
+  padding: 5px 100px;
+  min-height: 10vh;
+  background-color: black;
+}
+
+.dark nav.sticky {
+  background-color:white;
+}
+
+nav .logo {
+  height: 11vh;
+  width: auto;
+  position: relative;
+  transition: 0.6s;
+}
+
+nav.sticky .logo {
+  height: 7vh;
+  width: auto;
+  position: relative;
+}
+
+nav.sticky li a {
+  color: black;
+}
+
+nav div#menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  z-index: 2;
+  top: 0;
+  left: -100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+
+nav div#menu .img-nav {
+  position: absolute;
+  width: 80%;
+  filter: brightness(10%);
+  z-index: -1;
+}
+
+nav div#menu .close-nav {
+  width: 3vw;
+  position: absolute;
+  right: 80px;
+  top: 50px;
+  cursor: pointer;
+}
+
+nav div.open-nav {
+  width: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.dark nav div.open-nav {
+  color: white;
+}
+
+
+nav.sticky div.open-nav {
+  color: white;
+}
+
+.dark nav.sticky div.open-nav {
+  color: black;
+}
+
+nav.sticky img.open-nav {
+  filter: invert(100%);
+}
+
+nav div#menu li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+nav div#menu li a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px;
+  letter-spacing: 8px;
+  transition: 0.6s;
+}
+
+nav div#menu li a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.6s;
+}
+
+nav div#menu li a:hover::after {
+  width: 100%;
+}
+
+nav ul#nav-right {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul#nav-right li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+nav ul#nav-right li a {
+  font-size: 30px;
+  color: black;
+  transition: 0.8s;
+}
+
+.dark nav ul#nav-right li a {
+  color: white;
+}
+
+nav.sticky ul#nav-right li a {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  transition: 0.8s;
+}
+
+.dark nav.sticky ul#nav-right li a {
+  color: black;
+}

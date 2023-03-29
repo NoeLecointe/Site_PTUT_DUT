@@ -1,0 +1,131 @@
+/* animation header  */
+    
+#anim-header {
+position:absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: none;
+z-index: 2;
+}
+
+#anim-header > div {
+display:flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+min-height: 100vh;
+background: none;
+overflow: hidden;
+}
+#anim-header .anim-header-div-column {
+display:flex;
+flex-direction: column;
+}
+
+#anim-header .glowing {
+position: relative;
+min-width: 750px;
+height: auto;
+margin: -150px;
+transform-origin: right;
+animation: colorChange 5s linear infinite;
+}
+
+@keyframes colorChange {
+0% {
+    transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(360deg);
+}
+}
+
+#anim-header .glowing:nth-child(even) {
+transform-origin: left;
+}
+
+#anim-header .glowing span {
+position: absolute;
+top: calc(80px * var(--i));
+left: calc(80px * var(--i));
+bottom: calc(80px * var(--i));
+right: calc(80px * var(--i));
+}
+#anim-header .glowing span:before {
+content: " ";
+position: absolute;
+top:50%;
+left:-8px;
+width: 15px;
+height: 15px;
+background: #f00;
+border-radius: 50%;
+}
+
+#anim-header .glowing span:nth-child(4n + 1):before {
+background: rgba(230,0,126,1);
+box-shadow: 0 0 20px rgba(230,0,126,1),
+            0 0 40px rgba(230,0,126,1),
+            0 0 60px rgba(230,0,126,1),
+            0 0 80px rgba(230,0,126,1),
+            0 0 0 8px rgba(230,0,126,.1);
+}
+#anim-header .glowing span:nth-child(4n + 2):before {
+background: rgba(182,103,166,1);
+box-shadow: 0 0 20px rgba(182,103,166,1),
+            0 0 40px rgba(182,103,166,1),
+            0 0 60px rgba(182,103,166,1),
+            0 0 80px rgba(182,103,166,1),
+            0 0 0 8px rgba(182,103,166,.1);
+}
+#anim-header .glowing span:nth-child(4n + 3):before {
+background: rgba(10,156,216,1);
+box-shadow: 0 0 20px rgba(10,156,216,1),
+            0 0 40px rgba(10,156,216,1),
+            0 0 60px rgba(10,156,216,1),
+            0 0 80px rgba(10,156,216,1),
+            0 0 0 8px rgba(10,156,216,.1);
+}
+
+#anim-header .glowing span:nth-child(4n + 4):before {
+background: rgba(49,39,131,1);
+box-shadow: 0 0 20px rgba(49,39,131,1),
+            0 0 40px rgba(49,39,131,1),
+            0 0 60px rgba(49,39,131,1),
+            0 0 80px rgba(49,39,131,1),
+            0 0 0 8px rgba(49,39,131,.1);
+}
+
+#anim-header .glowing span:nth-child(4n + 1) {
+animation : animate 10s alternate infinite;
+}
+#anim-header .glowing span:nth-child(4n + 2) {
+animation : animate-reverse 3s alternate infinite;
+}
+#anim-header .glowing span:nth-child(4n + 3) {
+animation : animate 8s alternate infinite;
+}
+#anim-header .glowing span:nth-child(4n + 4) {
+animation : animate-reverse 5s alternate infinite;
+}
+
+@keyframes animate {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform : rotate(360deg);
+}
+}
+
+@keyframes animate-reverse {
+0% {
+    transform: rotate(360deg);
+}
+100% {
+    transform : rotate(0deg);
+}
+}

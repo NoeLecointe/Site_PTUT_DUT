@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logopc{
+text-align: center;
+}
+.logopc > img{
+    width: 50%;
+}
+.logom {
+    display: none!important;
+}
+
+.rs > li > a{
+    color: whitesmoke;
+}
+
+.rs > li > a:hover{
+    color: #b04c96;
+}
+
+.menu > li > a{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.menu > li > a:hover{
+    color: #b04c96;
+}
+
+.fond{
+    background-image: url('img/fondbg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fond >img{
+    width: 30%; 
+    margin-left: 60%;
+}
+
+.fond > div > button{
+    background-color: black; 
+    font-size: 25px; 
+    margin-top: 15px;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.sf{
+    width: 75%;
+}
+
+.info{
+    bottom: 5rem;
+}
+.info > button{
+    margin-left: 10%;
+}
+.info > button > img{
+    width: 100%;
+}
+
+.fond > div >  button:hover{
+    border: 2px solid #b04c96;
+}
+
+.vignette{
+    text-align: center; 
+    color: white; 
+    justify-content: center;
+}
+
+.carte {
+    width: 18rem; 
+    height: 10rem;
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.carte > div > h2 {
+    margin-top: 17.5%;
+}
+
+
+.cartebg1{
+    background-image: url('img/concert-gaf6388c92_1280.jpg'); 
+}
+
+.cartebg2{
+    background-image: url('img/vignettes Tables.jpg'); 
+}
+
+.cartebg3{
+    background-image: url('img/confetti-gb4feb588c_1920.jpg'); 
+}
+
+footer{
+    text-align: center;
+}
+
+footer > div{
+    width: 50%;
+}
+
+footer > div > ul{
+    color: whitesmoke;
+    text-align: left; 
+    margin-left: 35%;
+}
+
+footer > div > ul > li{
+    list-style-type: none;
+}
+
+footer > div > ul > li > a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer > div > ul > li > a:hover{
+    color: #b04c96;
+    text-decoration: none;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+
+.img1{
+    width: 15%;
+    height: 40%;
+    margin: 15px;
+}
+
+.img2{
+    width: 15%;
+    height: 60%;
+    margin: 15px;
+}
+
+.bandeaubas{
+    color: whitesmoke; 
+    font-size: 20px; 
+    justify-content: space-around;
+}
+
+.bandeaubas > img{
+    width: 15%;
+}
+
+.infom{
+    display: none!important;
+}
+
+@media (max-width: 425px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .rs{
+        margin-inline: auto;
+    }
+    nav > div > button{
+        color: whitesmoke;
+    }
+    .menuburger{
+        text-align: center;
+    }
+    .menuburger > button > span > svg{
+        color: #b04c96;
+    }
+    .fond{
+        flex-direction: column;
+        background-image: url('img/fond.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fond >img{
+        margin-inline: auto;
+        width: 60%;
+    }
+    
+    .info{
+        display: none!important;
+    }
+    .infom{
+        bottom: 10rem;
+        display: flex!important;
+    }
+    .infom > button{
+        margin-left: 10%;
+    }
+    .infom > button > img{
+        width: 100%;
+    }
+    .infom > button{
+        background-color: black; 
+        width: 80%;
+        border: 2px solid #b04c96;
+    }
+    .sf{
+        align-self: center;
+    }
+    .vignette {
+        flex-direction: column;
+    }
+    .carte {
+         width:auto;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer > div{
+        align-self: center;
+        margin-bottom: 20%;
+    }
+    footer > div > ul {
+        color: whitesmoke;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0rem;
+    }
+    .img1 {
+        width: 35%;
+        height: 30%;
+        margin: 15px;
+    }
+    .img2 {
+        width: 20%;
+        height: 60%;
+        margin: 15px;
+    }
+    .partenaires{
+        margin-bottom: 20%;
+    }
+    .bandeaubas > img {
+        width: 35%;
+    }
+    
+.logopc > img{
+    display: none!important;
+}
+.logom {
+    display: flex!important;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 0!important;    
+}
+.logom > img{
+    width: 30%;
+}
+.bandeaubas{
+    color: whitesmoke; 
+    font-size: 10px; 
+    justify-content: space-around;
+}
+
+.bandeaubas > img{
+    width: 30%;
+    margin-bottom: 0.75rem;
+}
+}
